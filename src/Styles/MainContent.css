@@ -96,6 +96,9 @@
     margin-bottom: -4px;
 }
 @media (max-width:1000px){
+    .main-content-container{
+        height: 100vh;
+    }
         .content-container{
             flex-direction: column-reverse;
             border: none;
