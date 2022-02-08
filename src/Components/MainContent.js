@@ -12,7 +12,11 @@ function MainContent() {
                             <div className='content-description'>
                                     <h4>Hello</h4>
                                     <h1>I'm Warren</h1>
+                                    <div>
                                     <p>Im a front end developer from canada.</p>
+                                    <p>Im a front end developer from canada.</p>
+                                    <p>Im a front end developer from canada.</p>
+                                    </div>
                                     <button>Hire Me</button>
                             </div>
                             <div className='content-image'>
