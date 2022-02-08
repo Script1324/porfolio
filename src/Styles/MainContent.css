@@ -1,0 +1,124 @@
+*{
+    transition: all 300ms ease;
+}
+.main-content-container{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   position: relative;
+   background-color: rgb(1, 3, 130);
+    
+}
+.main-content-container::after{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    top: 0;
+}
+.content-container{
+    width: 60%;
+    min-height: 60%;
+    display: flex;
+    position: relative;
+    z-index: 3;
+    border-top: 2px solid white;
+    border-radius: 20px;
+    height: auto;
+}
+.content-description{
+    flex: .5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-gap: 20px;
+    color: white;
+    padding: 20px;
+    
+    
+}
+.content-description h1{
+    font-size: 50px;
+    letter-spacing:3px  ;
+}
+.content-description button{
+    padding: 10px;
+    width: 120px;
+    border:none;
+    padding: none;
+    background-color: rgb(246, 245, 252);
+    color: rgb(51, 48, 48);
+    border-radius: 20px;
+    
+}
+.content-image{
+    flex: .5;
+    display: flex;
+    align-items: center;
+}
+.content-image .img-container{
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 2px 20px black;
+    border-radius: 50%;
+}
+.content-image .img-container img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.content-icons{
+    margin-left: 20px;
+    color: rgb(250, 241, 241);
+    display: flex;
+    flex-direction: column;
+}
+.content-icons > div{
+    display: flex;
+    box-shadow: 0 2px 5px grey;
+    padding:10px;
+    background-color: rebeccapurple;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 20px;    
+}
+.svg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.svg svg{
+    margin-bottom: -4px;
+}
+@media (max-width:1000px){
+        .content-container{
+            flex-direction: column-reverse;
+            border: none;
+           
+        }
+      .content-image{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+         
+      }
+      .content-icons{
+          flex-direction: row;
+          margin-top: 20px;
+          grid-gap: 20px;
+      }
+      .content-description{
+          justify-content: center;
+          align-items: center;
+          color: rgb(255, 15, 47);
+      }
+      .content-description > button{
+          background-color: rgb(253, 54, 54);
+          color: white;
+      }
+}
