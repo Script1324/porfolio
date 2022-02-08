@@ -117,8 +117,9 @@
           align-items: center;
           color: rgb(255, 15, 47);
       }
-      .content-description > button{
+      .content-description  button{
           background-color: rgb(253, 54, 54);
           color: white;
+          padding: 10px;
       }
 }
